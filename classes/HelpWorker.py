@@ -116,8 +116,8 @@ class HelpWorker:
 
 
     @input_error("")
-    def get_birthdays_per_week(self, contacts: AddressBook):
-        return contacts.get_birthdays_per_week()
+    def get_birthdays_per_week(self, args, contacts: AddressBook):
+        return contacts.get_birthdays_per_week(args)
 
 
     def print_all(self, contacts: AddressBook):
